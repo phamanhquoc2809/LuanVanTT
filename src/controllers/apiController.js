@@ -5,7 +5,7 @@ let getAllUsers = async (req, res) => {
   // 404 501
   // json/xml => object
   const [rows, fields] = await pool.execute("SELECT * FROM user");
-
+  console.log("check req", rows);
   return res.status(200).json({
     message: "ok",
     data: rows,

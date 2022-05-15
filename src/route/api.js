@@ -11,7 +11,7 @@ let initAPIRoute = (app) => {
   // router.put('/update-user', APIController.updateUser); //method PUT -> UPDATE data
   // router.delete('/delete-user/:id', APIController.deleteUser); //method DELETE -> DELETE data
 
-  return app.use("/api/v1/", router);
+  return app.use("/", router);
 };
 
 export default initAPIRoute;
